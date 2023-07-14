@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Chela+One&family=Lilita+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Caprasimo', cursive;
+    font-size: 15px;
+    background: violet;
+}
+h1,
+h2,
+h3 {
+    font-weight: bold;
+
+}
+
+h1 {
+    font-size: 7em;
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+h3 {
+    font-size: 2.4em;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo {
+    font-size: 4em;
+    font-weight: 500;
+    color: orangered;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 2.0em;
+    text-decoration: none;
+    color: rgb(83, 16, 16);
+    padding: 10px;
+    margin: 10px;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+#home {
+    background-color: rgb(71, 20, 20);
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home h2 {
+    font-weight: 250;
+    letter-spacing: .5px;
+}
+
+#bio {
+    display: flex;
+    align-items: center;
+
+}
+
+#bio h1 {
+    letter-spacing: 0.5px;
+    font-size: 4em;
+    font-weight: 500;
+}
+
+#bio img {
+    /* To make the image a square */
+    width: 250px;
+    height: 250px;
+    /* To crop the image in a circle */
+    border-radius: 70%;
+    margin: 100px;
+
+}
+
+#bio article {
+    margin: 10px;
+}
+
+#bio article p {
+    padding: 20px 0;
+}
+
+p {
+    font-size: 2.0em;
+}
+
+.link-button {
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.5px;
+    background: black !important;
+    /* https://css-tricks.com/when-using-important-is-the-right-choice/ */
+    color: white !important;
+    font-size: 1.8em;
+    border-radius: 7%;
+    cursor: pointer;
+    border-color: black;
+    padding: 11px;
+    font-weight: 100;
+}
+
+#portfolio {
+    
+    background-color: rgb(71, 20, 20);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#portfolio hr {
+
+    width: 400px;
+    margin: 20px auto;
+}
+
+#portfolio div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 50px;
+}
+
+#portfolio div article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: blue;
+    color: rgb(71, 20, 20);
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 250px;
+    width: 300px;
+}
+
+
+
+#portfolio>* {
+    margin-top: 20px;
+}
+
+#portfolio>p {
+    font-weight: 100;
+}
+
+#portfolio div article p,
+h3,
+img {
+    text-align: center;
+    padding: 20px 5px 0 5px;
+}
+
+.portfolio-icon {
+    font-size: 3em;
+    color: orange;
+}
+
+#skills h2 {
+    text-align: center;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#skills ul {
+    list-style: none;
+    font-size: 1.5em;
+}
+
+#skills ul li {
+    margin: 10px 0;
+    ;
+}
+
+progress[value] {
+    height: 10px;
+    width: 350px;
+    -webkit-appearance: none;
+}
+
+/* Styled only for google chrome */
+
+progress[value]::webkit-progress-bar {
+    background-color: grey;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+/* https://css-tricks.com/html5-progress-element/ */
+
+::-webkit-progress-value {
+    background-color: greenyellow;
+}
+
+#contact {
+    background-color: rgb(71, 20, 20);
+    color: violet;
+}
+
+.input {
+    line-height: 2em;
+    width: 350px;
+    border-radius: 3px;
+    border-color: black;
+}
